@@ -291,9 +291,20 @@
             });
         });
 
+        // Hero Scroll Indicator Click functionality
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        if (scrollIndicator) {
+            scrollIndicator.addEventListener('click', function() {
+                const nextSection = document.querySelector('.services-section') || document.querySelector('section:nth-of-type(2)');
+                if (nextSection) {
+                    nextSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+
         // Typing animation for hero section
         const typingText = document.getElementById('typingText');
-        const texts = ['Data Scientist', 'ML Engineer', 'Data Analyst', 'Python Developer'];
+        const texts = ['Data Scientist', 'ML Engineer', 'Data Analyst', 'Python Developer', 'Gen AI Engineer'];
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
