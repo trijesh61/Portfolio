@@ -944,7 +944,7 @@ h1, h2, h3, h4, h5, h6 {
 .tech-skill-card {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 15px;
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.5rem;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -976,45 +976,35 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-weight: 600;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Individual skill icon colors - Updated for new skill structure */
-/* Programming */
-.tech-skill-card:nth-child(1) .tech-skill-icon { color: #3776ab; } /* Python */
-.tech-skill-card:nth-child(2) .tech-skill-icon { color: #a8b9cc; } /* C */
+/* Individual skill icon colors */
+.tech-skill-icon.icon-huggingface { color: #ffd21e; }
+.tech-skill-icon.icon-langchain { color: #00a67d; }
+.tech-skill-icon.icon-chromadb { color: #ff6b6b; }
+.tech-skill-icon.icon-groq { color: #f55036; }
+.tech-skill-icon.icon-aws { color: #ff9900; }
+.tech-skill-icon.icon-mlflow { color: #0194e2; }
+.tech-skill-icon.icon-docker { color: #2496ed; }
+.tech-skill-icon.icon-github-actions { color: #2088ff; }
+.tech-skill-icon.icon-sklearn { color: #f7931e; }
+.tech-skill-icon.icon-pytorch { color: #ee4c2c; }
+.tech-skill-icon.icon-html { color: #e34f26; }
+.tech-skill-icon.icon-css { color: #1572b6; }
+.tech-skill-icon.icon-js { color: #f7df1e; }
+.tech-skill-icon.icon-django { color: #092e20; }
+.tech-skill-icon.icon-fastapi { color: #059669; }
+.tech-skill-icon.icon-streamlit { color: #ff4b4b; }
+.tech-skill-icon.icon-git { color: #f05032; }
+.tech-skill-icon.icon-jupyter { color: #f37626; }
+.tech-skill-icon.icon-excel { color: #217346; }
+.tech-skill-icon.icon-vscode { color: #007acc; }
 
-/* Data Analysis & Visualization */
-.tech-skill-card:nth-child(3) .tech-skill-icon { color: #130654; } /* Pandas */
-.tech-skill-card:nth-child(4) .tech-skill-icon { color: #4dabcf; } /* NumPy */
-.tech-skill-card:nth-child(5) .tech-skill-icon { color: #11557c; } /* Matplotlib */
-.tech-skill-card:nth-child(6) .tech-skill-icon { color: #7b9e87; } /* Seaborn */
-.tech-skill-card:nth-child(7) .tech-skill-icon { color: #f2c811; } /* Power BI */
-
-/* Databases */
-.tech-skill-card:nth-child(8) .tech-skill-icon { color: #4479a1; } /* MySQL */
-.tech-skill-card:nth-child(9) .tech-skill-icon { color: #f29111; } /* SQL */
-
-/* Machine Learning & AI */
-.tech-skill-card:nth-child(10) .tech-skill-icon { color: #f7931e; } /* Scikit-learn */
-.tech-skill-card:nth-child(11) .tech-skill-icon { color: #ff6f00; } /* TensorFlow */
-.tech-skill-card:nth-child(12) .tech-skill-icon { color: #d00000; } /* Keras */
-.tech-skill-card:nth-child(13) .tech-skill-icon { color: #ee4c2c; } /* PyTorch */
-
-/* Web Development */
-.tech-skill-card:nth-child(14) .tech-skill-icon { color: #e34f26; } /* HTML */
-.tech-skill-card:nth-child(15) .tech-skill-icon { color: #1572b6; } /* CSS */
-.tech-skill-card:nth-child(16) .tech-skill-icon { color: #f7df1e; } /* JavaScript */
-.tech-skill-card:nth-child(17) .tech-skill-icon { color: #092e20; } /* Django */
-.tech-skill-card:nth-child(18) .tech-skill-icon { color: #059669; } /* FastAPI */
-.tech-skill-card:nth-child(19) .tech-skill-icon { color: #ff4b4b; } /* Streamlit */
-
-/* Tools & Others */
-.tech-skill-card:nth-child(20) .tech-skill-icon { color: #f05032; } /* Git */
-.tech-skill-card:nth-child(21) .tech-skill-icon { color: #f37626; } /* Jupyter */
-.tech-skill-card:nth-child(22) .tech-skill-icon { color: #217346; } /* Excel */
-.tech-skill-card:nth-child(23) .tech-skill-icon { color: #007acc; } /* VS Code */
+/* Fallback nth-child styling */
+.tech-skill-card:nth-child(1) .tech-skill-icon { color: #3776ab; }
+.tech-skill-card:nth-child(2) .tech-skill-icon { color: #a8b9cc; }
 
 /* Skill Category Titles */
 .skill-category-title {
